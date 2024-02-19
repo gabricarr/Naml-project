@@ -1,0 +1,21 @@
+
+Commenti:
+- Nel paper non hanno normalizzato correttamente i dati prima di applicare le techniche di machine learning.
+- Aggiungendo semplicemente uno step di normalizzazione siamo  riusciti a megliorare praticamente tutti i risultati
+
+
+- La stessa cosa avviene nella parte relativa alle NN
+- Dove tra l'altro supponiamo che non abbiano ne normalizzato ne convertito gli spettrogrammi da RGB a grayscale (questo ha causato gli eccessivi tempi per il training)
+
+
+
+Oss:
+- Nel paper hanno usato una convolutional NN per le immagine e poi la hanno riusata sui dati nel csv (tra l'altro su un sottoinsieme dei dati diverso da quello usato nelle techiniche di ML)
+
+- Noi non siamo d'accordo su questa scelta e apporremo due modifiche:
+1) Alleneremo la NN sullo stesso insieme di dati che abbiamo usato per le tecniche di ML  
+2) Useremo un architettura non convoluzionale quando non useremo immagini.
+(Questo perchè "CNNs are designed for spatial data, and forcing non-spatial data into this format might not accurately capture its underlying relationships.")
+
+
+
