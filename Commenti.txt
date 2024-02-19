@@ -6,7 +6,7 @@ Commenti:
 
 - La stessa cosa avviene nella parte relativa alle NN
 - Dove tra l'altro supponiamo che non abbiano ne normalizzato ne convertito gli spettrogrammi da RGB a grayscale (questo ha causato gli eccessivi tempi per il training)
-
+- Un altra possibile causa del training troppo lento può il non avere convertito l'immagine da RGB a greyscale. (Uno spectrogramma non guadagna niente da un encoding con RGB)
 
 
 Oss:
