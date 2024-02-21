@@ -16,6 +16,7 @@ Oss:
 1) Alleneremo la NN sullo stesso insieme di dati che abbiamo usato per le tecniche di ML  
 2) Useremo un architettura non convoluzionale quando non useremo immagini.
 (Questo perchè "CNNs are designed for spatial data, and forcing non-spatial data into this format might not accurately capture its underlying relationships.")
-
+3) aggiungeremo un extra hidden layer prima dell output nella convolutional NN
+4) rimuoveremo l'ultimo blocco di convoluzioni per semplificare il modello
 
 
