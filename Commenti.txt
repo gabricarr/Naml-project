@@ -19,3 +19,10 @@ Questa architettura non è ottimale perchè mentre i blocchi convoluzionali impa
 
 
 
+OSS:
+- possiamo convermare che, con un architettura adeguata (grazie all aggiunta del global averange pooling layer), una CNN può battere le classiche techniche di machine learning (vedi accuracy).
+Particolare attenzione è portata al fatto che vengono battute solo quelle relative al dataset da 30s, questo perchè il dataset da 3s è effettivamente 10 volte più grande 
+e quindi le techniche applicate su quel dataset possono imparare più accuratamente pattern nascosti
+
+
+Confermiamo in oltre le skill issue degli autori del paper
