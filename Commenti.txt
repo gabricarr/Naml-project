@@ -4,19 +4,18 @@ Commenti:
 - Aggiungendo semplicemente uno step di normalizzazione siamo  riusciti a megliorare praticamente tutti i risultati
 
 
-- La stessa cosa avviene nella parte relativa alle NN
-- Dove tra l'altro supponiamo che non abbiano ne normalizzato ne convertito gli spettrogrammi da RGB a grayscale (questo ha causato gli eccessivi tempi per il training)
-- Un altra possibile causa del training troppo lento può il non avere convertito l'immagine da RGB a greyscale. (Uno spectrogramma non guadagna niente da un encoding con RGB)
-
 
 Oss:
 - Nel paper hanno usato una convolutional NN per le immagine e poi la hanno riusata sui dati nel csv (tra l'altro su un sottoinsieme dei dati diverso da quello usato nelle techiniche di ML)
 
 - Noi non siamo d'accordo su questa scelta e apporremo due modifiche:
-1) Alleneremo la NN sullo stesso insieme di dati che abbiamo usato per le tecniche di ML  
+1) Alleneremo la NN sullo stesso insieme di dati che abbiamo usato per le tecniche di ML
+
 2) Useremo un architettura non convoluzionale quando non useremo immagini.
 (Questo perchè "CNNs are designed for spatial data, and forcing non-spatial data into this format might not accurately capture its underlying relationships.")
-3) aggiungeremo un extra hidden layer prima dell output nella convolutional NN
-4) rimuoveremo l'ultimo blocco di convoluzioni per semplificare il modello
+
+3) Nel paper subito dopo l'ultimo blocco di convoluzioni gli autput vengono passati ai 10 neuroni di output. 
+Questa architettura non è ottimale perchè mentre i blocchi convoluzionali imparano ad estrarre le features, manca un layer per imparare a classificare, per questo aggiungiamo un altro layer che fa global averange pooling (bill1 poi devi spiegare cos è, è facile cerca su google non avevo voglia)
+
 
 
