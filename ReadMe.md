@@ -33,7 +33,7 @@ All the results are reproduced using Python. The machine learning models and the
 | Model                      | Description                                                                                                                                                  |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deep Neural Network        | Input: 57 neurons, 4 hidden layers: (512, 256, 128, 64), Output: 10 neurons. ReLU activation. Dropout: 0.2 between each hidden layer, 0.5 before output. AdamW optimizer, weight decay: 1e-5. |
-| Convolutional Neural Network | 5 convolutional blocks: Convolution (3x3 filter, 1x1 stride, mirrored padding), ReLU activation, Max pooling (2x2 window, 2x2 stride), Dropout: 0.2. Filter sizes: (16, 32, 64, 128, 256).  |
+| Convolutional Neural Network | 5 convolutional blocks: Convolution (3x3 filter, 1x1 stride, mirrored padding), ReLU activation, Max pooling (2x2 window, 2x2 stride), Dropout: 0.2. Filter sizes: (16, 32, 64, 128, 256). AdamW optimizer, weight decay: 1e-5. |
 
 ## Conclusions
 Dhevan S. Lau and Ritesh Ajoodha decided to neither reject nor accept the hypothesis presented, we on the other end have found sufficient evidence to accept the hypothesis.
