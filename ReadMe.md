@@ -5,8 +5,8 @@
 
 ## Goal of the project: 
 This project aims to reproduce, and possibly improve, the results obtained by Dhevan S. Lau and Ritesh Ajoodha in the paper: "Music Genre Classification A Comparative Study between Deep Learning and Traditional Machine  Learning Approaches".
-The original research paper compared five off-the-shelf machine learning classifiers with two deep learning models on the task of music genre classification on the popular GTZAN dataset. The hypothesis was that a deep-learning approach would have outperformed the traditional models. Still, the results obtained were lacking so the authors ended up neither rejecting nor accepting the hypothesis.
-Requirements
+The original research paper compared five off-the-shelf machine learning classifiers with two deep learning models on the task of music genre classification on the popular GTZAN dataset. The hypothesis presented was that a deep-learning approach would have outperformed the traditional models. Still, the results obtained were lacking so the authors ended up neither rejecting nor accepting the hypothesis.
+
 
 ## Repository Structure
 The project is organized in two sections.
@@ -33,7 +33,7 @@ All the results are reproduced using Python. The machine learning models and the
 | Model                      | Description                                                                                                                                                  |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Deep Neural Network        | Input: 57 neurons, 4 hidden layers: (512, 256, 128, 64), Output: 10 neurons. ReLU activation. Dropout: 0.2 between each hidden layer, 0.5 before output. AdamW optimizer, weight decay: 1e-5. |
-| Convolutional Neural Network | 5 convolutional blocks: Convolution (3x3 filter, 1x1 stride, mirrored padding), ReLU activation, Max pooling (2x2 window, 2x2 stride), Dropout: 0.2. Filter sizes: (16, 32, 64, 128, 256). AdamW optimizer, weight decay: 1e-5. |
+| Convolutional Neural Network | 5 convolutional blocks: Convolution (3x3 filter, 1x1 stride, mirrored padding), ReLU activation, Max pooling (2x2 window, 2x2 stride), Dropout: 0.2. Filter sizes: (16, 32, 64, 128, 256). 1 Global Average Pooling layer. AdamW optimizer, weight decay: 1e-5. |
 
 ## Conclusions
 Dhevan S. Lau and Ritesh Ajoodha decided to neither reject nor accept the hypothesis presented, we on the other end have found sufficient evidence to accept the hypothesis.
